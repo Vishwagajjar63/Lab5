@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    background-color: white;
+    border: 0%;
+  }
+  header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: blueviolet;
+    align-items: center;
+    height: 100px;
+  }
+  header>nav>a{
+    font-size: 200%;
+    list-style: none;
+    color: white;
+    display: inline-block;
+    text-align: right;
+    margin-left: 50px;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .abc{
+  width: 105vw;
+  height: 100vh;
+  display: block;
+  margin: auto;
+  }
+  .a1{
+    color: white;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%)
+  }
+  .row{
+    display: flex;
+  }
+  .column{
+    padding-top: 0%;
+    float:left;
+    width:33.33%;
+    padding: 5px;
+  }
+  .row::after{
+        content:"";
+        clear:both;
+        display: table;
+  }
+ .def{
+    background-color: blueviolet;
+    text-align: center;
+    color:white
+ }
